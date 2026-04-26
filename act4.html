@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Act4- JS Await/Async</title>
+</head>
+<body>
+    
+    <h1 id="result"></h1>
+    <script>
+        async function mult(x,y) {
+            var res = await x * y;
+            fun1(res);
+        }
+        function fun1(product) {
+            document.getElementById("result").innerHTML = "Product:" + product;
+        }
+        mult(200,15);
+    </script>
+</body>
+
+</html>

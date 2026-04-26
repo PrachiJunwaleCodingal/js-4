@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Act2- Callback Function</title>
+</head>
+<body>
+
+    <p id="result"></p>
+    <script>
+
+        function cal(x, y, callback) {
+            let mult = x * y;
+            callback(mult);
+        }
+        function fun1(res) {
+            document.getElementById("result").innerHTML = res;
+        }
+        cal(20, 30, fun1);
+    </script>
+</body>
+
+</html>
